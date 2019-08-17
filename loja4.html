@@ -9,19 +9,24 @@
         body{
             background-color: black;
             font-family:'Courier New';
+            overflow: hidden;
         }
         a{
             font-size: 19px;
             color: brown;
         }
         img{
-            width:300px;
-            height:205px;
-            top: 350px;
+            width:400px;
+            height:350px;
+            top: 340px;
             left: 600px;
             position: absolute;
         }
-        
+        iframe{
+            position: fixed;
+            top: 495px;
+            left: 1050px;
+        }
     </style>
             <!--text-align:right;  alinha      ||    OBS!!    cuidado  -> position:fixed;-->
 </head>
@@ -32,35 +37,33 @@
                 
     </p>
     
-    <p style="color: azure; text-align: center; font-size: 29px">Tipos de Hardware</p>
+    <h1 style="color: azure; text-align: center; font-size: 26px">Tipos de Hardware</h1>
 
-    <ul>
-        <li style="position: absolute; top: 250px; left: 10px"><a href ="loja1.html">Inicio</a></li>  
-    </ul>
+    <a href ="loja1.html">Inicio</a> 
     
-    <br><br><br><br><br>
+    <br><br><br><br><br><br>
     
-    <h1 style="color:azure;text-align:left;font-size: 20px">
+    <h1 style="color:azure;text-align:left;font-size: 20px; position: absolute">
         Cisco:<sub>Roteadores,Switches,Segurança,Data Center e entre outros...</sub>
     </h1>
 
-    <ul>
-        <li style="position: absolute; top: 410px; left: 10px"><a style="color: blue"
-        href ="https://www.cisco.com/c/pt_br/products/index.html">Comprar</a></li>  
-    </ul>
-    
-    <br><br><br><br><br>
+    <a style="color: blue;position: absolute;top: 410px; left: 10px"
+        href ="https://www.cisco.com/c/pt_br/products/index.html">Comprar</a>  
+        
+    <br><br><br><br><br><br><br>
 
-    <h1 style="color:azure;text-align:left;font-size: 20px">
+    <h1 style="color:azure;text-align:left;font-size: 20px; position: absolute">
         Asus:<sub>Roteadores,Switches,Segurança,Monitores e entre outros...</sub>
     </h1>
 
-    <ul>
-        <li style="position: absolute; top: 550px; left: 10px"><a style="color: blue"
-        href ="https://www.asus.com/br/">Comprar</a></li>  
-    </ul>
+    <a style="color: blue; position: absolute; top: 540px; left: 10px"
+        href ="https://www.asus.com/br/">Comprar</a>  
+  
 
-   <img src="img/Har.jpg" alt="Teste">
+   <img src="img/Har.jpg" alt="Hardware">
+
+   <iframe  src="https://www.terra.com.br/noticias/" 
+   frameborder="5"></iframe>
 
    <!-- imagem absoluta quando diminui a tela fica com bug    OBS!!!-->
  
