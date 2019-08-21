@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+
+    <style>
+        form{
+            margin: 5px;
+            padding: 2px;
+            width: 350px;
+            background: tan;
+            border: 1px solid blue;
+        }
+        input{
+            margin-top: 3px;
+            color: aqua;
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <form action="#">
+        Nome: <input value="John..." name="nome" type="text" size="15px"><br>
+        End: <input disabled type="text" name="end" size="17px"><br>
+
+    </form>
+
+    <br>
+
+    <form action="#" method="POST">
+        <label for="nome">Nome:</label><br>
+        <input autofocus required placeholder="Digitar nome" id="nome" name="nome" type="text" size="17px"><br>
+        <label for="end">Endereço:</label><br>
+        <input autofocus required placeholder="Digitar endereço" id="end" type="text" name="end" size="17px" maxlength="9"><br>
+        <label for="senha">Senha:</label><br>
+        <input autofocus required placeholder="Digitar senha" id="senha" name="senha" type="password" size="10px"><br>
+
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+        <input type="button" value="Clicar" onclick="alert('Olar Mundo')">
+
+        <input type="hidden" nome="etapa" value="1"> <!-- obs campo oculto-->
+
+    </form>
+
+
+</body>
+
+<!-- get e o (post) padrao de envio    !!! <form action="#" method="">
+    * taipes de input - html 
+
+
+    <form action="#" size="" maxlength="" value="" method="">
+        <input name="texto_1" type="text">
+        <input name="cor_1" type="color">
+        <input name="data_1" type="date">
+        <input name="botao_1" type="button">
+        <input name="senha" type="password">
+        <input name="emal" type="email">
+        <input name="range" type="range">
+        <input name="tel" type="tel">
+
+    </form>
+-->
+
+</html>
