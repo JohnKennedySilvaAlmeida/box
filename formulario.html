@@ -15,7 +15,10 @@
         }
         input{
             margin-top: 3px;
-            color: aqua;
+            color:brown;
+        }
+        body{
+            background-color: black;
         }
     
     </style>
@@ -39,7 +42,57 @@
         <label for="senha">Senha:</label><br>
         <input autofocus required placeholder="Digitar senha" id="senha" name="senha" type="password" size="10px"><br>
 
+        <label>Qual sua fruta preferida:</label><br>
+        <input id="laranja" type="checkbox" name="laranja" value="laranja">
+        <label for="laranja">Laranja</label><br>
+        <input id="maca" type="checkbox" name="maca" value="maca">
+        <label for="maca">Maçã</label><br>
 
+        <label>Qual o seu time?</label><br>
+        <input type="radio" name="time" value="fla">Flamengo
+        <input type="radio" name="time" value="flu">Fluminense<br>
+
+        Cor:<br>
+        <input type="color"><br>
+
+        Arquivo: <br>
+        <input type="file"><br>
+
+        Numero: <br>
+        <input type="number" min="5" max="25"><br>
+
+        Num: <br>
+        <input type="range" min="1" max="10"><br>
+
+        Url: <br>
+        <input type="url"><br>
+
+        Data: <br>
+        <input type="date" name="data" min="2019-01-01" max="2019-12-31"><br>
+
+        Mês: <br>
+        <input type="month"><br>
+
+        Horas: <br>
+        <input type="time"><br>
+
+        Observação: <br>
+        <textarea name="obs" cols="35" rows="5" placeholder="Digita aqui..."></textarea><br>
+
+        Selecione a cidade:<br>
+        <select name="cidade">
+            <option select value="Jaragua">jaragua do sul</option>
+            <option value="blumenal">blumenal</option>
+            <option value="Joinville">joinville</option>
+        </select><br>
+
+        Selecione a cidade:<br>
+        <select name="cidade" size="3" multiple>
+            <option value="Jaragua">jaragua do sul</option>
+            <option value="blumenal" selected>blumenal</option>
+            <option value="Joinville">joinville</option>
+        </select><br>
+        
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
 
