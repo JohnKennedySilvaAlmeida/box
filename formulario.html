@@ -103,6 +103,13 @@
         <input type="hidden" nome="etapa" value="1"> <!-- obs campo oculto-->
 
     </form>
+    
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 
+        Num1: 0  <input type="range"  id="a" name="a" value="50">100<br>
+        Num2: <input type="number" id="b" name="b" value="50"><br>
+        Resultado: <output name="x" for="a b"></output><br><br>
+        <input type="submit">
+    </form> 
 
 
 </body>
