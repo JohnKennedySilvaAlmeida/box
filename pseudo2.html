@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+
+    <style>
+        /* primeiro filho do P */
+        p:first-child {
+            color: yellow;
+        }
+
+        p:last-child {
+            color: aqua;
+        }
+
+        /* ultimo filho do P */
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        /* troca a selecao , cor !! */
+        p::selection {
+            background-color: blueviolet;
+            font-size: 32px;
+        }
+
+        /* posição do filho!! */
+        p:nth-child(3) {
+            background: tomato;
+        }
+
+        /* par e impar !! */
+        p:nth-child(odd) {
+            color: chartreuse;
+        }
+
+        p:nth-child(even) {
+            color: chocolate;
+        }
+
+        /* inicio e fim  !! */
+        p::before {
+            content: "##";
+        }
+
+        P::after {
+            content: "**";
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <p>asdsadasd asdasdasdsad asdasdasdsad</p>
+    <p>asdsadasd asdasdasdsad asdasdasdsad</p>
+    <p>asdsadasd asdasdasdsad asdasdasdsad</p>
+    <p>asdsadasd asdasdasdsad asdasdasdsad</p>
+    <p>asdsadasd asdasdasdsad asdasdasdsad</p>
+
+</body>
+
+</html>
