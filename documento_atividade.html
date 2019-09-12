@@ -3,74 +3,161 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Novo Documento atividade</title>
+    <title>Site</title>
 
     <style>
         * {
             margin: 0;
         }
 
+        /* retira a margem d pargina html */
         h1 {
             text-align: center;
+            border: 3px solid royalblue;
+            background: aqua;
+            margin: 9px;
+            color: darkgray;
         }
 
         h2 {
             background: royalblue;
+            margin: 3px;
+            border: 2px solid aqua;
+            text-align: center;
+            color: darkgray;
         }
 
+        h2:hover,
+        h1:hover {
+            background: tomato;
+        }
+
+        /* cores muda quanto passa o mause ou click */
         p {
             color: aqua;
-
-        }
-        .margem{
-            margin:10px;
-        }
-        .margem1{
-            margin: 20px;
-        }
-        .margem2{
-            margin: 30px;
+            font-size: larger;
         }
 
         a {
             text-decoration: none;
+            font-style: italic;
         }
 
+        /* a = tag = nomes  */
+        .a1 {
+            margin: 10px;
+            color: blueviolet;
+        }
+
+        .a2 {
+            margin: 18px;
+            color: blueviolet;
+        }
+
+        .a3 {
+            margin: 28px;
+            color: blueviolet;
+        }
+
+        a:hover {
+            background: tomato;
+        }
+
+        .margemP1 {
+            margin: 10px;
+        }
+
+        .margemP2 {
+            margin: 20px;
+        }
+
+        .margemP3 {
+            margin: 30px;
+        }
+
+        /* margens de paragrafos com espacos diferentes */
         .imag {
             background-image: url(img/CIRCULO.png);
             width: 225px;
             height: 225px;
             text-align: center;
-
         }
+
+        img{
+            width: 300px;
+            height: 300px;
+            margin-left: 500px;
+            margin-top: -250px;
+        }
+
+        /* imagem no canto superio da tela (class) */
+        .espacosParaf {
+            border: 3px solid azure;
+            word-spacing: 5px;
+            letter-spacing: 5px;
+            margin-top: 4px;
+            padding: 25px;
+            text-indent: 4em;
+            border-radius: 20px;
+            margin: 4px;
+            text-align: justify;
+        }
+
+        /* margens e espacos entre paragrafos e bordas e formatos */
+
+        /* iframe{ 
+            width: 400px;
+            height: 150px;
+            margin-top: -380px;
+            margin-left: 400px
+        }*/
     </style>
 
 </head>
 
 <body style="background:darkgrey;">
 
-    <p class="imag">Circulo</p>
+    <p class="imag"><u>Circulo</u></p>
+
+    <img src="img/goku_gif.gif" alt="DragonBollZ">
+
+    <!-- <iframe src="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/379/jaraguadosul-sc" 
+        frameborder="0"></iframe> -->
 
     <h1>John kennedy</h1>
 
-    <p>Nemo fuga error fuga rerum voluptatibus.</p>
-    <p>Nemo fuga error fuga rerum voluptatibus.</p><br>
+    <p class="espacosParaf">
+        Talvez você esteja preocupado(a) demais,
+        desanimado com essa ou aquela situação.
+        Vivendo sob grande tensão.
+        Sem saber por onde ir ou como fazer.
+        Pois vou lhe dar alguns motivos para melhorar.
+        mesmo sem grandes recursos financeiros,
+        mesmo sem médico, sem analista e sem dor.
+        <br><br>
+        Determinação, coragem e autoconfiança são fatores decisivos para o sucesso.
+        Se estamos possuídos por uma inabalável determinação, conseguiremos superá-los.
+        Independentemente das circunstâncias, devemos ser sempre humildes, recatados e despidos de orgulho.
+    </p>
 
     <h2>Links</h2><br>
 
-    <p class="margem">Nemo fuga error fuga rerum voluptatibus.</p>
+    <p class="margemP1"><u>O mais usado do mundo!</u></p>
 
-    <a href="https://www.google.com" target="_blank">Google</a>
-    
-    <p class="margem1">Nemo fuga error fuga rerum voluptatibus.</p>
-    
-    <a href="https://www.terra.com.br/" target="_blank">Terra</a>
-    
-    <p class="margem2">Nemo fuga error fuga rerum voluptatibus.</p>
-    
-    <a href="https://www.r7.com/" target="_blank">R7</a>
+    <a class="a1" href="https://www.google.com" target="_blank">Google</a>
 
+    <p class="margemP2"><u>Noticias do dia!</u></p>
 
+    <a class="a2" href="https://www.terra.com.br/" target="_blank">Terra</a>
+
+    <p class="margemP3"><u>Fofoca do dia a dia!</u></p>
+
+    <a class="a3" href="https://www.r7.com/" target="_blank">R7</a>
+
+    <footer style="background-color:aquamarine; text-align:center; color:darkgray; font-size: 20px;">
+
+        ...O melhor Site do Mundo... <article>
+    </footer>
 
 
 </body>
