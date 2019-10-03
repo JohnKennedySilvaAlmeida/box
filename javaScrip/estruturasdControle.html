@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+</head>
+
+<body>
+
+    <div id="cab"></div>
+
+    <div id="cab1"></div>
+
+    <script>
+        var tx = "";
+        var i;
+
+        for (i = 1; i < 7; i++) {
+            tx += "<h" + i + ">Ola </h" + i + ">";
+        }
+
+        document.getElementById("cab").innerHTML = tx;
+
+
+        var txt = "";
+        var x = 0;
+
+        while (x < 10) {
+            txt += "numero:" + x + "<br>";
+            x++;
+        }
+
+        document.getElementById("cab1").innerHTML = txt;
+
+    </script>
+</body>
+
+</html>
