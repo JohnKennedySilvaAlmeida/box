@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+</head>
+
+<body onload="alert('Ola mundo')">
+
+    <input type=" submit" value="Enviar" onclick="alert('Voce cliclou neste campo')">
+
+    <a href="#" onmouseover="console.log('Passou o mause aqui')">Clique aqui</a>
+
+    <input type="text" onfocus="console.log('Foco nele')">
+
+    <button onclick="abrir()">Clicar !!!</button>
+
+    <script>
+        open("http://www.uol.com.br");
+
+        open("inicio.html", "", "toolbar=no,width=400,height=400");
+
+
+        function abrir() {
+            open("http://www.uol.com.br");
+        }
+
+    </script>
+
+</body>
+
+</html>
