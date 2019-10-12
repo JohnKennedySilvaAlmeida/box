@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Documento</title>
+    <title>imc</title>
 
     <!-- Google Icon Font -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,29 +20,118 @@
 
 <body>
 
-    <form name="imcForm" id="imcForm" action="#" class="container">
+    <header>
 
-        <p>
-            Altura<br />
-            <input type="text" id="altura" name="altura" placeholder="0.00" />
-        </p>
+        <nav>
+            <div class="nav-wrapper cyan">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Inicial</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="imagens.html">Imagens</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="imc.html">IMC</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+        </nav>
 
-        <p>Peso<br />
-            <input type="text" id="peso" name="peso" placeholder="00.00" />
-        </p>
+        <!-- OBS! epsancividade !!!!! -->
 
-        <p>
-            <label>
-                <input type="radio" name="sexo" value="opção" id="sexo_0" />
-                Masculino</label>
-            <br />
-            <label>
-                <input type="radio" name="sexo" value="opção" id="sexo_1" />
-                Feminino</label>
-        </p>
-        <p><input name="Enviar" type="submit" value="Calcular" onclick="calcula_imc()" />
-        </p>
-    </form>
+        <!-- <ul class="sidenav" id="mobile-demo">
+            <li><a href="#index.html">Inicial</a></li>
+            <li><a href="#contato.html">Contato</a></li>
+            <li><a href="#servicos.html">Serviços</a></li>
+            <li><a href="#imagens.html">Imagens</a></li>
+            <li><a href="#depoimentos.html">Depoimentos</a></li>
+            <li><a href="#imc.html">IMC</a></li>
+            <li><a href="#sobre.html">Sobre</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
+
+
+        </ul> -->
+    </header>
+
+    <!-- OBS! pagina lateral dados(links)-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m3">
+                <aside>
+                    <div class="collection">
+                        <a href="#" class="collection-item">Gordura Localizada</a>
+                        <a href="#" class="collection-item">Celulite</a>
+                        <a href="#" class="collection-item">Emagrecimento Rápido</a>
+                        <a href="#" class="collection-item">Flacidez</a>
+                    </div>
+                </aside>
+            </div>
+            <!-- OBS! -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <!-- obs!! formulario Icm -->
+                    <H1 class="center-align">ICM</H1>
+
+                    <form name="imcForm" id="imcForm" action="#" class="container">
+
+                        <p>Altura <br />
+                            <input type="text" id="altura" name="altura" placeholder="0.00" required />
+                        </p>
+
+                        <p>Peso <br />
+                            <input type="text" id="peso" name="peso" placeholder="00.00" required />
+                        </p>
+
+                        <p>Sexo <br>
+                            <label>
+                                <input id="m" class="with-gap" name="group3" type="radio" />
+                                <span>Masculino</span>
+                            </label>
+                            <label>
+                                <input id="f" class="with-gap" name="group3" type="radio" />
+                                <span>Feminino</span>
+                            </label>
+                        </p>
+
+                        <button id="bttn" class="btn waves-effect waves-light nav-wrapper cyan" name="Enviar"
+                            type="submit" value="Calcular" onclick="calcula_imc()">Calcular
+
+                            <i class="material-icons right">sentiment_satisfied</i>
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- obs! rodape -->
+    <footer class="page-footer nav-wrapper cyan">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 l6">
+                    <h5 class="white-text">First Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col s12 m4 l6">
+                    <h5 class="white-text">Second Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
 
 
 
@@ -55,6 +144,7 @@
 
 
     <script type="text/javascript">
+        // java -------- script ---------------------------
 
         function calcula_imc() {
             var altura = document.imcForm.altura.value;
@@ -65,24 +155,50 @@
             var calculo = (peso / quadrado);
 
             if (calculo < 18.5) {
-                alert("Você está magro com esse indice: " + calculo);
+                alert("Você está magro! com esse indice: " + calculo.toPrecision(4));
             }
             else if (calculo >= 18.5 && calculo < 24.9) {
-                alert("Você está normal com esse indice: " + calculo);
+                alert("Você está normal! com esse indice: " + calculo.toPrecision(4));
             }
 
             else if (calculo >= 25 && calculo < 29.9) {
-                alert("Você está com sobre peso com esse indice: " + calculo);
+                alert("Você está com sobre peso! com esse indice: " + calculo.toPrecision(4));
             }
+
             else if (calculo >= 30 && calculo < 39.9) {
-                alert("Você está com obesidade com esse indice: " + calculo);
+                alert("Você está com obesidade! com esse indice: " + calculo.toPrecision(4));
             }
-            else if (calculo > 40)
-                alert("Você estácom obesidade grave com esse indice: " + calculo);
+
+            else if (calculo > 40) {
+                alert("Você estácom obesidade grave! com esse indice: " + calculo.toPrecision(4));
+            }
+
         }
 
     </script>
 
+
+    <!-- <label>Peso <input id="peso" /> kg</label><br />
+
+    <label>Altura <input id="altura" /> m</label><br />
+
+    <button id="botao">Calcular IMC</button>
+
+    <div id="resultado"> </div>
+
+    <script>
+        $('#botao').click(function () {
+            var peso = $('#peso').val();
+            var altura = $('#altura').val();
+            var imc = peso / (altura * altura);
+            var hr = $(' < hr > ');
+            var spanIMC = $('<span>').text('IMC: ' + imc);
+            $('#resultado').append(hr).append(spanIMC);
+        });
+    </script>
+
+
+    opção para calcular  jquery-->
 
 
 </body>
